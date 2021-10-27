@@ -7,7 +7,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Currently provides an automated way to formulate basic global supply chain problems with a user-specified number of production centres and demand nodes. 
-A linear program is created in [Pyomo](http://www.pyomo.org), solved using [ipopt](https://github.com/coin-or/Ipopt), and plotted using [Matplotlib](https://matplotlib.org) and [Cartopy](https://scitools.org.uk/cartopy/docs/v0.15/index.html) for projections of the globe. 
+A linear program is created in [Pyomo](http://www.pyomo.org), solved using [Ipopt](https://github.com/coin-or/Ipopt), and plotted using [Matplotlib](https://matplotlib.org) and [Cartopy](https://scitools.org.uk/cartopy/docs/v0.15/index.html) for projections of the globe. 
 
 <p style="text-align:center;">
 <img src="docs/basic_supply_chain.png"/>
