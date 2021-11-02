@@ -10,7 +10,7 @@ Currently provides an automated way to formulate basic global supply chain probl
 A linear program is created in [Pyomo](http://www.pyomo.org), solved using [Ipopt](https://github.com/coin-or/Ipopt), and plotted using [Matplotlib](https://matplotlib.org) and [Cartopy](https://scitools.org.uk/cartopy/docs/v0.15/index.html) for projections of the globe. 
 
 <p style="text-align:center;">
-<img src="docs/basic_supply_chain.png"/>
+<img src="docs/biomass_supply_chain.png"/>
 </p>
 
 - _Optimization variables_ of the linear program are currently the amount of product distributed from each production centre to each demand zone. 
