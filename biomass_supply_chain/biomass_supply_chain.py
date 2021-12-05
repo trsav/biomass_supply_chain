@@ -134,6 +134,7 @@ def build_problem(production_nodes, processing_nodes, demand_nodes):
             expr=sum(m.distribution_vars[:, i]) >= demand_amounts[i, 0]
         )
     m.objective = Objective(expr=cost, sense=minimize)
+    m.write("programs/biomass_supply_chain.lp")
     dict = {}
     dict["model"] = m
     dict["production_locations"] = production_locations
@@ -149,7 +150,6 @@ def plot_nodes(ax, nodes, name, color):
         transform=ccrs.Geodetic(),
         color=color,
         s=20,
-        alpha=0.5,
         zorder=1,
         label=name,
     )
@@ -157,6 +157,7 @@ def plot_nodes(ax, nodes, name, color):
 
 
 def plot_transport(ax, matrix, loc1, loc2, color):
+    matrix = matrix / np.amax(matrix)
     for i in range(len(loc1)):
         for j in range(len(loc2)):
             ax.plot(
@@ -165,7 +166,7 @@ def plot_transport(ax, matrix, loc1, loc2, color):
                 transform=ccrs.Geodetic(),
                 color=color,
                 alpha=0.5,
-                linewidth=matrix[i, j] * 1,
+                linewidth=matrix[i, j] * 5,
                 zorder=-1,
             )
     return

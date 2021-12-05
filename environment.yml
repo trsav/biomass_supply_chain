@@ -16,6 +16,8 @@ dependencies:
   - dataclasses=0.8=pyhc8e2a94_3
   - freetype=2.10.4=h4cff582_1
   - geos=3.9.1=he49afe7_2
+  - glpk=5.0=h3cb5acd_0
+  - gmp=6.2.1=h2e338ed_0
   - ipopt=3.14.4=hc501a57_0
   - jbig=2.1=h0d85af4_2003
   - jpeg=9d=hbcb3906_0
@@ -94,6 +96,7 @@ dependencies:
     - filelock==3.3.1
     - flatbuffers==2.0
     - identify==2.3.1
+    - imageio==2.10.1
     - iniconfig==1.1.1
     - jax==0.2.24
     - jaxlib==0.1.73
